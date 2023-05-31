@@ -14,7 +14,7 @@ import { MaiorIdadeDirective } from './directives/maior-idade.directive';
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, CadastroComponent, SucessoCadastroComponent, MensagemComponent, MaiorIdadeDirective],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [MaiorIdadeDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
