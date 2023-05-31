@@ -35,6 +35,7 @@
          <div *ngIf="(nascimento?.invalid && nascimento?.touched) 
           || nascimento?.dirty">
           <app-mensagem *ngIf="nascimento?.errors?.['required']" mensagem="O campo de data é obrigatório."></app-mensagem>
+          <app-mensagem *ngIf="nascimento?.errors?.['']" mensagem=""></app-mensagem>
         </div>
       </div>
       <div class="formulario__campo">
