@@ -23,7 +23,7 @@ export class CadastroComponent implements OnInit {
 
     if (cep !== '') {
       this.consultacepService.getConsultaCep(cep).subscribe(resultado => {
-        console.log(resultado);
+        // console.log(resultado);
         this.populandoEndereco(resultado, f);
       });
     }
@@ -43,7 +43,8 @@ export class CadastroComponent implements OnInit {
     if (form.valid) {
       this.router.navigate(['./sucesso']);
     } else {
-      alert('Formulário inválido!');
+      form.form.markAllAsTouched();
+      // alert('Formulário inválido!');
     }
     console.log(form.controls);
   }
