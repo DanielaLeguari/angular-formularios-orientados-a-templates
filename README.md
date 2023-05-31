@@ -2,6 +2,9 @@
 
 ## Fomulário de Cadastro AluraBooks
 
+
+![](./src/assets/img/formulario.png)
+
 ### instalação de depedências 
 
 - `npm i`
